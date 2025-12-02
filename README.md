@@ -17,22 +17,13 @@ Reload your shell:
 source ~/.zshrc  # or source ~/.bashrc
 ```
 
-### 2. Build the binary
+### 2. Install the tool
 
-```bash
-cd tools/git-multi
-go build -o ~/bin/git-multi main.go
-```
+Option A: Install via go install (Recommended)
 
-### 3. Set up alias (optional)
+go install github.com/anton-martsiushkou/git-multi@latest
 
-Add to your `~/.zshrc` or `~/.bashrc`:
-
-```bash
-alias gmulti='~/bin/git-multi'
-```
-
-### 4. Use it!
+### 3. Use it!
 
 ```bash
 gmulti checkout develop
